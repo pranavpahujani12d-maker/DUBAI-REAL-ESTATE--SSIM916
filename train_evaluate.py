@@ -85,15 +85,16 @@ feature_names = X.columns
 feature_imp_df = pd.DataFrame({"Feature": feature_names, "Importance": importances})
 feature_imp_df = feature_imp_df.sort_values(by="Importance", ascending=False).head(10)
 
-print("\n=== Top 10 Important Features (Random Forest) ===")
+print("\n Top 10 Important Features (Random Forest) ")
 print(feature_imp_df.to_string(index=False))
 
 # Save results for report
 with open("results_summary.txt", "w", encoding="utf-8") as f:
-    f.write("=== Model Comparison ===\n")
+    f.write(" Model Comparison \n")
     f.write(results_df.to_string(index=False))
-    f.write("\n\n=== Top 10 Features ===\n")
+    f.write("\n\n Top 10 Features \n")
     f.write(feature_imp_df.to_string(index=False))
 
 print("\nResults saved to results_summary.txt")
+
 
