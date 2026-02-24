@@ -1,0 +1,17 @@
+ Model Comparison 
+            Model  RMSE (Log)  MAE (Log)       R²   RMSE (AED)    MAE (AED)
+Linear Regression    0.279635   0.205344 0.746649 22852.293067 15854.448676
+    Random Forest    0.187304   0.129839 0.886333 17527.570472 10876.995586
+
+ Top 10 Features 
+                           Feature  Importance
+                     size.sq.meter    0.501748
+          area.name_Downtown Dubai    0.065598
+            area.name_Dubai Marina    0.055358
+            area.name_Business Bay    0.030634
+           area.name_Palm Jumeirah    0.027648
+                           no.beds    0.017677
+area.name_Jumeirah Beach Residence    0.014008
+                    area.name_DIFC    0.012215
+            apart.area.name_La Mer    0.011995
+              area.name_Umm Suqeim    0.011527
